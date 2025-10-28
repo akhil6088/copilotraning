@@ -159,9 +159,9 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  margin-left: 18px;
-  padding-left: 6px;
+  list-style: none; /* hide bullets */
+  margin: 0;
+  padding: 0;
   display: block;
 }
 
@@ -170,7 +170,30 @@ footer {
   font-size: 14px;
   color: #555;
   line-height: 1.25;
-  display: list-item;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-label {
+  flex: 1 1 auto;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Subtle style for empty state */
