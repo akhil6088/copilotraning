@@ -60,6 +60,7 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
+  padding-bottom: 18px; /* give room for participants section */
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -141,4 +142,46 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section styles (new) */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants-section h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style: disc;
+  margin-left: 18px;
+  padding-left: 6px;
+  display: block;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.25;
+  display: list-item;
+}
+
+/* Subtle style for empty state */
+.participants-list .no-participants {
+  font-style: italic;
+  color: #999;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Make long emails wrap nicely */
+.participants-list li {
+  word-break: break-word;
 }
